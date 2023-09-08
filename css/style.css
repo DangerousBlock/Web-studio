@@ -1,0 +1,50 @@
+body{
+    font-family: "Roboto";
+}
+
+:root{
+    --one: rgba(33, 150, 243, 1);
+    --two: rgba(33, 33, 33, 1);
+    --three: rgba(117, 117, 117, 1);
+    --four: rgba(255, 255, 255, 1);
+    --five: rgba(255, 255, 255, 0.6);
+    --six: rgba(37, 38, 58, 1);
+}
+
+a{
+    text-decoration: none;
+}
+
+.nav-list-link{
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.1;
+    letter-spacing: 0.02cm;
+    text-align: left;
+    color: var(--two)
+}
+
+.nav-list-link:hover{
+    color: #2196F3
+}
+
+.contacts-list-link{
+    font-family: Roboto;
+    font-weight: 500;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: #757575
+}
+
+.contacts-list-link:hover{
+    color: #2196F3
+}
+
+.container{
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 1200px;
+    margin: 0 auto;
+}
