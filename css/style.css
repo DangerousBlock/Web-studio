@@ -32,6 +32,11 @@ a{
     text-decoration: none;
 }
 
+ul {
+    list-style: none;
+}
+
+
 .nav-list-link{
     font-family: Roboto;
     font-size: 14px;
@@ -64,4 +69,66 @@ a{
     padding-right: 15px;
     width: 1200px;
     margin: 0 auto;
+    
+}
+
+.section-features-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header {
+    border: 1px solid #ECECEC;
+    border-style: none none solid none;
+
+    display: flex;
+    padding-left: 215px;
+    padding-top: 24px;
+    padding-bottom: 25px;
+
+    width: 1600px;
+}
+
+.logo {
+    color: var(--primary-text-color);
+    
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1,19;
+
+    margin-right: 93px;
+}
+
+.logo span {
+    color: var(--accent-color);
+}
+
+img{
+    display: block;
+}
+
+.section-hero-btn{
+    display: block;
+    margin: 0 auto;
+}
+button{
+    color: var(--accent-color);
+}
+
+.section-hero{
+    padding: 200px 0;
+}
+.section-features{
+    padding: 94px 0;
+}
+.section-work{
+    padding-bottom: 94px;
+}
+.section-team{
+    padding: 94px 0;
+}
+.footer{
+    padding: 60px 0;
 }
