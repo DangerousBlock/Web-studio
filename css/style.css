@@ -11,7 +11,7 @@
 шрифт футер rgba(255, 255, 255, 0.6)
 */
 
-
+container
 
 
 :root {
@@ -27,8 +27,36 @@
     --footer-text-color: rgba(255, 255, 255, 0.6);
 }
 
+.team-list{
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-team-title,.section-work-title{
+    margin-bottom: 50px;
+}
+
+.team-list-img{
+    margin-bottom: 30px;
+}
+
+.team-list-title{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.team-list-description{
+    display: flex;
+    justify-content: center;
+}
+
 a{
     text-decoration: none;
+}
+
+.address-list-link{
+    color: #757575;
 }
 
 ul {
@@ -50,7 +78,7 @@ ul {
 }
 
 .section-hero{
-    font-family: "Roboto";
+    font-family: "Roboto";;
 }
 
 .secton-hero-title{
@@ -168,11 +196,16 @@ body{
     align-items: center;
 }
 
+.work-list{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
 .header {
     border: 1px solid #ECECEC;
     border-style: none none solid none;
 
-    display: flex;
     padding-left: 215px;
     padding-top: 24px;
     padding-bottom: 25px;
@@ -180,8 +213,15 @@ body{
     width: 1600px;
 }
 
-.logo {
+.logo-header {
     color: var(--primary-text-color);
+}
+.logo-footer {
+    color: var(--hero-text-white);
+}
+
+.logo {
+    color: var(--accent-color);
     
     font-family: Raleway, sans-serif;
     font-weight: 700;
@@ -191,9 +231,8 @@ body{
     margin-right: 93px;
 }
 
-.logo span {
-    color: var(--accent-color);
-}
+
+
 
 img{
     display: block;
