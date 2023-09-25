@@ -11,7 +11,7 @@
 шрифт футер rgba(255, 255, 255, 0.6)
 */
 
-container
+btn
 
 
 :root {
@@ -25,6 +25,24 @@ container
 
     --footer-hero-color: #2F303A;
     --footer-text-color: rgba(255, 255, 255, 0.6);
+}
+
+.logo-header {
+    color: var(--primary-text-color);
+}
+.logo-footer {
+    color: var(--hero-text-white);
+}
+
+.logo {
+    color: var(--accent-color);
+    
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1,19;
+
+    margin-right: 93px;
 }
 
 .team-list{
@@ -213,26 +231,6 @@ body{
     width: 1600px;
 }
 
-.logo-header {
-    color: var(--primary-text-color);
-}
-.logo-footer {
-    color: var(--hero-text-white);
-}
-
-.logo {
-    color: var(--accent-color);
-    
-    font-family: Raleway, sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1,19;
-
-    margin-right: 93px;
-}
-
-
-
 
 img{
     display: block;
@@ -241,10 +239,30 @@ img{
 .section-hero-btn{
     display: block;
     margin: 0 auto;
+    background-color: #2196F3;
+    width: 216px;
+    height: 50px;
+    border: 6px solid #2196F3;
+    border-radius: 7px;
+    margin-top: 30px;
 }
-button{
-    color: var(--accent-color);
+.section-hero-link{
+    color: #ECECEC;
 }
+.contacts-list{
+    display: flex;
+    justify-content: end;
+    gap: 50px;
+    align-self: center;
+}
+.nav-list{
+    display: flex;
+    justify-content: start;
+    gap: 50px;
+    margin-left: 230px;
+    align-self: center;
+}
+
 
 .section-hero{
     padding: 200px 0;
