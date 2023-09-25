@@ -28,14 +28,14 @@ btn
 }
 
 .logo-header {
-    color: var(--primary-text-color);
+    color: #212121;
 }
 .logo-footer {
-    color: var(--hero-text-white);
+    color: white;
 }
 
 .logo {
-    color: var(--accent-color);
+    color: #2196F3;
     
     font-family: Raleway, sans-serif;
     font-weight: 700;
@@ -288,22 +288,47 @@ img{
     line-height: 26px;
 }
 
+.filter-list-item:hover{
+    color: white;
+}
+
+.filter-list{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 100px;
+    margin-bottom: 56px;
+}
+
 .filter-list-btn{
     color:var(--primary-text-color);
 }
 
 .filter-list-btn:hover{
-    color: var(--accent-color);
+    background-color: #2196F3;
+    border: 3px solid #2196F3;
+    border-radius: 7px;
 }
 
 .portfolio-list-title{
     font-family: "Roboto";
     font-size: 18px;
     line-height: 36px;
+    margin-top: 20px;
+    margin-bottom: 4px;
 }
 
 .portfolio-list-description{
     font-family: "Roboto";
     font-size: 16px;
     line-height: 30px;
+}
+
+.portfolio-list{
+    display: flex;
+    flex-wrap: wrap;
+    width: 1170px;
+    margin-left: 350px;
+    gap: 30px;
+    row-gap: 50px;
 }
