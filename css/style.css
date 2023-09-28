@@ -11,7 +11,6 @@
 шрифт футер rgba(255, 255, 255, 0.6)
 */
 
-btn
 
 
 :root {
@@ -302,6 +301,7 @@ img{
 
 .filter-list-btn{
     color:var(--primary-text-color);
+    background-color: white;
 }
 
 .filter-list-btn:hover{
