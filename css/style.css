@@ -43,6 +43,12 @@
 
     margin-right: 93px;
 }
+.team-list-item{
+    border: 2px solid #EEEEEE;
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
 
 .team-list{
     display: flex;
@@ -79,9 +85,14 @@ a{
 ul {
     list-style: none;
 }
-
-/* Шрифты */
-
+.footer{
+    margin-top: 94px;
+    background-color: #2F303A;
+}
+.footer-address{
+    color: rgba(255, 255, 255, 1);
+    margin-top: 20px;
+}
 .nav-list{
     font-family: "Roboto";
     font-size: 14px;
@@ -95,7 +106,10 @@ ul {
 }
 
 .section-hero{
-    font-family: "Roboto";;
+    font-family: "Roboto";
+    background-image: url(../img/bg_btn.png);
+    display: inline block;
+    background-size: cover;
 }
 
 .secton-hero-title{
@@ -103,6 +117,8 @@ ul {
     font-size: 44px;
     text-align: center;
     line-height: 60px;
+    color: rgba(255, 255, 255, 1);
+    ;
 }
 
 .section-hero-btn{
@@ -131,12 +147,45 @@ body{
     font-family: "Roboto";
     font-size: 14px;
     line-height: 16.41px;
+    margin-bottom: 10px;
 }
 
-.features-list-description{
+.features-list-title-first,.features-list-title-second,.features-list-title-third,.features-list-title-fourth{
     font-family: "Roboto";
     font-size: 14px;
     line-height: 24px;
+}
+.features-list-title-first::before{
+    content: "";
+    background-image: url(../img/Group\ 1.png);
+    width: 270px;
+    height: 120px;
+    display: inline-block;
+    margin-bottom: 30px;
+}
+.features-list-title-second::before{
+    content: "";
+    background-image: url(../img/Group\ 2.png);
+    width: 270px;
+    height: 120px;
+    display: inline-block;
+    margin-bottom: 30px;
+}
+.features-list-title-third::before{
+    content: "";
+    background-image: url(../img/Group\ 3.png);
+    width: 270px;
+    height: 120px;
+    display: inline-block;
+    margin-bottom: 30px;
+}
+.features-list-title-fourth::before{
+    content: "";
+    background-image: url(../img/Group\ 4.png);
+    width: 270px;
+    height: 120px;
+    display: inline-block;
+    margin-bottom: 30px;
 }
 
 .section-work-title{
@@ -163,6 +212,7 @@ body{
     font-family: "Roboto";
     font-size: 16px;
     line-height: 18.75px;
+    margin-bottom: 30px;
 }
 
 .address-list{
@@ -301,13 +351,16 @@ img{
 
 .filter-list-btn{
     color:var(--primary-text-color);
-    background-color: white;
+    background-color: #F5F4FA;
+    border: 3px solid #F5F4FA;
+    border-radius: 7px;
 }
+
 
 .filter-list-btn:hover{
     background-color: #2196F3;
     border: 3px solid #2196F3;
-    border-radius: 7px;
+    border-radius: 4px;
 }
 
 .portfolio-list-title{
@@ -316,19 +369,28 @@ img{
     line-height: 36px;
     margin-top: 20px;
     margin-bottom: 4px;
+    margin-left: 24px;
 }
 
 .portfolio-list-description{
     font-family: "Roboto";
     font-size: 16px;
     line-height: 30px;
+    margin-left: 24px;
+    margin-bottom: 20px;
 }
-
 .portfolio-list{
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 3vw;
     width: 1170px;
     margin-left: 350px;
-    gap: 30px;
-    row-gap: 50px;
+    row-gap: 30px;
+}
+.portfolio-list-item{
+    border: 1px solid #EEEEEE;
+    box-shadow: 1px 4px 6px 0px #00000029;
+    box-shadow: 0px 4px 4px 0px #0000000F;
+    box-shadow: 0px 1px 1px 0px #0000001F;
 }
