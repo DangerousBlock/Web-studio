@@ -48,7 +48,6 @@
 .team-list-item{
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
-    background-color: var(--head-color);
     transition: all 0.3s ease-in-out;
 }
 
@@ -161,7 +160,6 @@ body{
     line-height: 1.7;
     letter-spacing: 0.03em;
     text-align: left;
-    color: var(--address);
 }
 
 .features-list-item-first,.features-list-item-second,.features-list-item-third,.features-list-item-fourth{
@@ -280,7 +278,11 @@ body{
 }
 
 .nav-list-link:hover{
-    color: #2196F3
+    color: #2196F3;
+    width: 100%;
+    padding-bottom: 25px;
+    border-bottom: 5px solid #2196F3;
+    border-radius: 5px;
 }
 
 .contacts-list{
@@ -671,7 +673,6 @@ a[href^="https"]{
     font-weight: 400;
     line-height: 1.1;
     letter-spacing: 0.01em;
-    color: var(--address);
   }
 
   .modal-label{
@@ -786,12 +787,15 @@ a[href^="https"]{
     background-color: #F5F4FA;
     border: 1px solid #F5F4FA;
     border-radius: 7px;
+    transition: all 0.3s ease-in-out;
 
 }
 .filter-list-btn:hover{
     background-color: #2196F3;
     border: 1px solid #2196F3;
     border-radius: 4px;
+    color: white;
+    
 }
 
 .portfolio-list{
@@ -801,12 +805,18 @@ a[href^="https"]{
     max-width: 1170px;
     gap: 30px;
     margin-top: 34px;
+    
 }
 
 .portfolio-list-item{
     box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
-    outline: 1px solid var(--second-page-container-bg);
+    max-height: 404px;
 }
+.portfolio-text-cover {
+    max-width: 370px;
+    max-height: 404px;
+    visibility: hidden;
+  }
 
 .portfolio-list-title{
     font-size: 18px;
@@ -814,7 +824,6 @@ a[href^="https"]{
     line-height: 2;
     letter-spacing: 0.06em;
     text-align: left;
-    color: var(--menu-nav);
     margin-bottom: 4px;
     margin-left: 24px;
     margin-top: 20px;
@@ -826,7 +835,6 @@ a[href^="https"]{
     line-height: 1.9;
     letter-spacing: 0.03em;
     text-align: left;
-    color: var(--address);
     margin-left: 24px;
     margin-bottom: 20px;
     margin-top: 4px;
